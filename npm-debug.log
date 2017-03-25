@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose readDependencies loading dependencies from F:\algorithms-master\package.json
+5 verbose install where, deps [ 'F:\\algorithms-master', [ 'mocha', 'should' ] ]
+6 verbose install where, peers [ 'F:\\algorithms-master', [] ]
+7 verbose installManyTop reading for lifecycle F:\algorithms-master\package.json
+8 info preinstall algorithms@1.0.0
+9 verbose readDependencies loading dependencies from F:\algorithms-master\package.json
+10 silly cache add args [ 'mocha@^3.2.0', null ]
+11 verbose cache add spec mocha@^3.2.0
+12 silly cache add args [ 'should@^11.2.1', null ]
+13 verbose cache add spec should@^11.2.1
+14 silly cache add parsed spec Result {
+14 silly cache add   raw: 'mocha@^3.2.0',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'mocha',
+14 silly cache add   rawSpec: '^3.2.0',
+14 silly cache add   spec: '>=3.2.0 <4.0.0',
+14 silly cache add   type: 'range' }
+15 silly addNamed mocha@>=3.2.0 <4.0.0
+16 verbose addNamed ">=3.2.0 <4.0.0" is a valid semver range for mocha
+17 silly addNameRange { name: 'mocha', range: '>=3.2.0 <4.0.0', hasData: false }
+18 silly mapToRegistry name mocha
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry data Result {
+21 silly mapToRegistry   raw: 'mocha',
+21 silly mapToRegistry   scope: null,
+21 silly mapToRegistry   name: 'mocha',
+21 silly mapToRegistry   rawSpec: '',
+21 silly mapToRegistry   spec: 'latest',
+21 silly mapToRegistry   type: 'tag' }
+22 silly mapToRegistry uri https://registry.npmjs.org/mocha
+23 verbose addNameRange registry:https://registry.npmjs.org/mocha not in flight; fetching
+24 silly cache add parsed spec Result {
+24 silly cache add   raw: 'should@^11.2.1',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'should',
+24 silly cache add   rawSpec: '^11.2.1',
+24 silly cache add   spec: '>=11.2.1 <12.0.0',
+24 silly cache add   type: 'range' }
+25 silly addNamed should@>=11.2.1 <12.0.0
+26 verbose addNamed ">=11.2.1 <12.0.0" is a valid semver range for should
+27 silly addNameRange { name: 'should', range: '>=11.2.1 <12.0.0', hasData: false }
+28 silly mapToRegistry name should
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry data Result {
+31 silly mapToRegistry   raw: 'should',
+31 silly mapToRegistry   scope: null,
+31 silly mapToRegistry   name: 'should',
+31 silly mapToRegistry   rawSpec: '',
+31 silly mapToRegistry   spec: 'latest',
+31 silly mapToRegistry   type: 'tag' }
+32 silly mapToRegistry uri https://registry.npmjs.org/should
+33 verbose addNameRange registry:https://registry.npmjs.org/should not in flight; fetching
+34 verbose request uri https://registry.npmjs.org/mocha
+35 verbose request no auth needed
+36 info attempt registry request try #1 at 11:33:04
+37 verbose request id a6d75d3378ea05c1
+38 http request GET https://registry.npmjs.org/mocha
+39 verbose request uri https://registry.npmjs.org/should
+40 verbose request no auth needed
+41 info attempt registry request try #1 at 11:33:04
+42 http request GET https://registry.npmjs.org/should
+43 info retry will retry, error on last attempt: Error: getaddrinfo ENOENT registry.npmjs.org:443
+44 info retry will retry, error on last attempt: Error: getaddrinfo ENOENT registry.npmjs.org:443
+45 info attempt registry request try #2 at 11:33:14
+46 http request GET https://registry.npmjs.org/mocha
+47 info attempt registry request try #2 at 11:33:14
+48 http request GET https://registry.npmjs.org/should
+49 info retry will retry, error on last attempt: Error: getaddrinfo ENOENT registry.npmjs.org:443
+50 info retry will retry, error on last attempt: Error: getaddrinfo ENOENT registry.npmjs.org:443
+51 info attempt registry request try #3 at 11:34:14
+52 http request GET https://registry.npmjs.org/mocha
+53 info attempt registry request try #3 at 11:34:14
+54 http request GET https://registry.npmjs.org/should
+55 verbose stack Error: getaddrinfo ENOENT registry.npmjs.org:443
+55 verbose stack     at Object.exports._errnoException (util.js:870:11)
+55 verbose stack     at errnoException (dns.js:32:15)
+55 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:78:26)
+56 verbose cwd F:\algorithms-master
+57 error Windows_NT 10.0.14393
+58 error argv "C:\\Program Files (x86)\\nodejs\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+59 error node v4.4.5
+60 error npm  v2.15.5
+61 error code ENOENT
+62 error errno ENOENT
+63 error syscall getaddrinfo
+64 error enoent getaddrinfo ENOENT registry.npmjs.org:443
+64 error enoent This is most likely not a problem with npm itself
+64 error enoent and is related to npm not being able to find a file.
+65 verbose exit [ 1, true ]

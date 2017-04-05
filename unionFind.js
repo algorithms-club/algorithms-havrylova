@@ -27,8 +27,6 @@ class UnionFind {
 	}
 
 	isConnected(a, b) { 
-		//0,1;
-		//[undefined,undefined];
 
 		if( isNaN(this._elements[a]) || isNaN(this._elements[b]) ) {
 			return false;

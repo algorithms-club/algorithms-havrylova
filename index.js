@@ -2,10 +2,14 @@
 
 let bubbleSort = require('./bubble-sort');
 let coverByTile = require('./entry-test/coverByTile');
+let nextYearFind = require('./entry-test/nextYearFind');
+let watermelon = require('./entry-test/watermelon');
 
 let algolib = {
     bubbleSort,
-    coverByTile
+    coverByTile,
+    nextYearFind,
+    watermelon
 }
 
 module.exports = algolib;

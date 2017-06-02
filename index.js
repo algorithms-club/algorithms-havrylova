@@ -6,6 +6,7 @@ let UnionFind = require ('./entry-test/unionFind');
 let nextYearFind = require('./entry-test/nextYearFind');
 let watermelon = require('./entry-test/watermelon');
 let linkedList = require('./entry-test/linked-list');
+let sort = require('./entry-test/sort');
 
 let algolib = {
     bubbleSort,
@@ -13,7 +14,8 @@ let algolib = {
     nextYearFind,
     watermelon,
     linkedList,
-    UnionFind
+    UnionFind,
+    sort
 };
 
 module.exports = algolib;

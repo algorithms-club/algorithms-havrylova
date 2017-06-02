@@ -8,7 +8,9 @@ function watermelon(weight) {
 	if ( weight < 1 || weight > 100 || isNaN( weight ) ) {
 	  return ( wrongNumber );
 	} else {
-	    if (weight % 2 === 0) {
+        if (weight == 2) {
+            return ( canNotDivideEven );
+        } else if (weight % 2 === 0) {
 	      return ( canDivideEven );
 	    } else {
 	      return ( canNotDivideEven );
